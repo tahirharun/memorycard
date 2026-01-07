@@ -67,9 +67,7 @@ export default function MemoryGame() {
   };
 
   const allMatched = cards.every((card) => card.isMatched);
-
   return (
-    /* OUTER WRAPPER (centers everything) */
     <div
       style={{
         minHeight: "100vh",
@@ -82,7 +80,6 @@ export default function MemoryGame() {
         padding: "20px",
       }}
     >
-      {/* GAME CONTAINER */}
       <div
         style={{
           width: "100%",
@@ -110,8 +107,6 @@ export default function MemoryGame() {
             You Won!
           </p>
         )}
-
-        {/* CARD GRID */}
         <div
           style={{
             display: "grid",
@@ -148,8 +143,6 @@ export default function MemoryGame() {
             </div>
           ))}
         </div>
-
-        {/* RESTART BUTTON */}
         <button
           onClick={restartGame}
           style={{
