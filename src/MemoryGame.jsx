@@ -107,7 +107,7 @@ export default function MemoryGame() {
               marginBottom: "10px",
             }}
           >
-            🎉 You Won!
+            You Won!
           </p>
         )}
 
